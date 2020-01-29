@@ -55,7 +55,7 @@ class GDrive:
             "auth_uri": "https://accounts.google.com/o/oauth2/auth",
             "token_uri": "https://oauth2.googleapis.com/token",
             "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-            "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/worktime%40worktime-265901.iam.gserviceaccount.com"
+            "client_x509_cert_url": "url"
         }
         self.credentials = ServiceAccountCredentials.from_json_keyfile_dict(self.dict, self.scope)
         self.gc = gspread.authorize(self.credentials)
